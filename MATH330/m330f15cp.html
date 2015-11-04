@@ -1,0 +1,1743 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<title>Fall 2015: Differential Equations</title>
+<meta name=Title content="">
+<meta name=Keywords content="">
+<meta http-equiv=Content-Type content="text/html; charset=macintosh">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 2008">
+<meta name=Originator content="Microsoft Word 2008">
+<link rel=File-List href="test_files/filelist.xml">
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Heath Fontaine</o:Author>
+  <o:Template>Normal.dotm</o:Template>
+  <o:LastAuthor>Heath Fontaine</o:LastAuthor>
+  <o:Revision>1</o:Revision>
+  <o:TotalTime>1</o:TotalTime>
+  <o:Created>2015-11-04T00:17:00Z</o:Created>
+  <o:LastSaved>2015-11-04T00:18:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Company>School</o:Company>
+  <o:Lines>1</o:Lines>
+  <o:Paragraphs>1</o:Paragraphs>
+  <o:Version>12.0</o:Version>
+ </o:DocumentProperties>
+ <o:OfficeDocumentSettings>
+  <o:AllowPNG/>
+ </o:OfficeDocumentSettings>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:TrackMoves>false</w:TrackMoves>
+  <w:TrackFormatting/>
+  <w:PunctuationKerning/>
+  <w:DrawingGridHorizontalSpacing>18 pt</w:DrawingGridHorizontalSpacing>
+  <w:DrawingGridVerticalSpacing>18 pt</w:DrawingGridVerticalSpacing>
+  <w:DisplayHorizontalDrawingGridEvery>0</w:DisplayHorizontalDrawingGridEvery>
+  <w:DisplayVerticalDrawingGridEvery>0</w:DisplayVerticalDrawingGridEvery>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:DontGrowAutofit/>
+   <w:DontAutofitConstrainedTables/>
+   <w:DontVertAlignInTxbx/>
+  </w:Compatibility>
+ </w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" LatentStyleCount="276">
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+@font-face
+	{font-family:Times;
+	panose-1:2 0 5 0 0 0 0 0 0 0;
+	mso-font-charset:0;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 0 0 0 1 0;}
+@font-face
+	{font-family:Cambria;
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 0 0 0 1 0;}
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Cambria;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	mso-outline-level:1;
+	font-size:24.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ascii-font-family:Times;
+	mso-hansi-font-family:Times;}
+h2
+	{mso-style-link:"Heading 2 Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	mso-outline-level:2;
+	font-size:18.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ascii-font-family:Times;
+	mso-hansi-font-family:Times;}
+p.MsoFootnoteText, li.MsoFootnoteText, div.MsoFootnoteText
+	{mso-style-link:"Footnote Text Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ascii-font-family:Times;
+	mso-fareast-font-family:Cambria;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Times;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+p.MsoListBullet, li.MsoListBullet, div.MsoListBullet
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.2in;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	text-indent:-.2in;
+	line-height:125%;
+	mso-pagination:widow-orphan;
+	mso-list:l0 level1 lfo1;
+	tab-stops:13.5pt;
+	font-size:10.0pt;
+	mso-bidi-font-size:11.0pt;
+	font-family:"Times New Roman";
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+p.MsoListBulletCxSpFirst, li.MsoListBulletCxSpFirst, div.MsoListBulletCxSpFirst
+	{mso-style-type:export-only;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.2in;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	text-indent:-.2in;
+	line-height:125%;
+	mso-pagination:widow-orphan;
+	mso-list:l0 level1 lfo1;
+	tab-stops:13.5pt;
+	font-size:10.0pt;
+	mso-bidi-font-size:11.0pt;
+	font-family:"Times New Roman";
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+p.MsoListBulletCxSpMiddle, li.MsoListBulletCxSpMiddle, div.MsoListBulletCxSpMiddle
+	{mso-style-type:export-only;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.2in;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	text-indent:-.2in;
+	line-height:125%;
+	mso-pagination:widow-orphan;
+	mso-list:l0 level1 lfo1;
+	tab-stops:13.5pt;
+	font-size:10.0pt;
+	mso-bidi-font-size:11.0pt;
+	font-family:"Times New Roman";
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+p.MsoListBulletCxSpLast, li.MsoListBulletCxSpLast, div.MsoListBulletCxSpLast
+	{mso-style-type:export-only;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.2in;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	text-indent:-.2in;
+	line-height:125%;
+	mso-pagination:widow-orphan;
+	mso-list:l0 level1 lfo1;
+	tab-stops:13.5pt;
+	font-size:10.0pt;
+	mso-bidi-font-size:11.0pt;
+	font-family:"Times New Roman";
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-locked:yes;
+	mso-style-link:"Heading 1";
+	mso-ansi-font-size:24.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Times;
+	mso-ascii-font-family:Times;
+	mso-hansi-font-family:Times;
+	mso-font-kerning:18.0pt;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-locked:yes;
+	mso-style-link:"Heading 2";
+	mso-ansi-font-size:18.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Times;
+	mso-ascii-font-family:Times;
+	mso-hansi-font-family:Times;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+span.apple-converted-space
+	{mso-style-name:apple-converted-space;}
+span.grame
+	{mso-style-name:grame;}
+span.spelle
+	{mso-style-name:spelle;}
+span.FootnoteTextChar
+	{mso-style-name:"Footnote Text Char";
+	mso-style-locked:yes;
+	mso-style-link:"Footnote Text";
+	mso-ansi-font-size:10.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Times;
+	mso-ascii-font-family:Times;
+	mso-hansi-font-family:Times;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+@list l0
+	{mso-list-id:-119;
+	mso-list-type:simple;
+	mso-list-template-ids:18133038;}
+@list l0:level1
+	{mso-level-number-format:bullet;
+	mso-level-style-link:"List Bullet";
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:27.0pt;
+	mso-level-number-position:left;
+	margin-left:27.0pt;
+	text-indent:-.25in;
+	font-family:Symbol;
+	color:#C0504D;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:minor-latin;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:minor-latin;}
+</style>
+<![endif]-->
+</head>
+
+<body bgcolor=white lang=EN-US link=blue vlink=blue style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+style='font-size:10.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>&nbsp;</span></b><span style='font-size:11.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'><o:p></o:p></span></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+style='font-size:10.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>&nbsp;</span></b><span style='font-size:11.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'><o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center;page-break-after:avoid;
+mso-outline-level:1'><b style='mso-bidi-font-weight:normal'><span
+style='font-size:16.0pt;font-family:"Times New Roman";color:black;mso-font-kerning:
+18.0pt'>Fall 2015&nbsp;&nbsp;<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+style='font-size:10.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>&nbsp;</span></b><span style='font-size:11.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'><o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center;page-break-after:avoid;
+mso-outline-level:1'><b style='mso-bidi-font-weight:normal'><span
+style='font-size:16.0pt;font-family:"Times New Roman";color:black;mso-font-kerning:
+18.0pt'>Math 330: Ordinary Differential Equations<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'><o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center;page-break-after:avoid;
+mso-outline-level:2'><b style='mso-bidi-font-weight:normal'><span
+style='font-size:20.0pt;font-family:"Times New Roman";color:black'>Course
+Syllabus and Class Policies<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='font-size:14.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>1.</span><span style='font-size:7.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style='font-size:7.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>&nbsp;</span><b style='mso-bidi-font-weight:
+normal'><span style='font-size:14.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>Course topics</span></b><span style='font-size:
+14.0pt;font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>:</span><span style='font-size:11.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-indent:-.25in'><span
+style='font-size:11.0pt;font-family:Symbol;mso-bidi-font-family:"Times New Roman";
+color:black'>·</span><span style='font-size:7.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+style='font-size:7.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span><b
+style='mso-bidi-font-weight:normal'><span style='font-size:11.0pt;font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";color:black'>Introduction</span></b><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>to differential equations (3 classes)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-indent:-.25in'><span
+style='font-size:11.0pt;font-family:Symbol;mso-bidi-font-family:"Times New Roman";
+color:black'>·</span><span style='font-size:7.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+style='font-size:7.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span><span
+class=GramE><b style='mso-bidi-font-weight:normal'><span style='font-size:11.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>First</span></b></span><b style='mso-bidi-font-weight:normal'><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'> order differential equations</span></b><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>(7 classes)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-indent:-.25in'><span
+style='font-size:11.0pt;font-family:Symbol;mso-bidi-font-family:"Times New Roman";
+color:black'>·</span><span style='font-size:7.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+style='font-size:7.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span><b
+style='mso-bidi-font-weight:normal'><span style='font-size:11.0pt;font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";color:black'>Second-
+and higher-order</span></b><span style='font-size:11.0pt;mso-bidi-font-size:
+12.0pt;font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;</span><span style='font-size:11.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>linear differential
+equations (8 classes)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-indent:-.25in'><span
+style='font-size:11.0pt;font-family:Symbol;mso-bidi-font-family:"Times New Roman";
+color:black'>·</span><span style='font-size:7.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+style='font-size:7.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span><b
+style='mso-bidi-font-weight:normal'><span style='font-size:11.0pt;font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";color:black'>Mechanical
+and electrical vibrations</span></b><span style='font-size:11.0pt;mso-bidi-font-size:
+12.0pt;font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;</span><span style='font-size:11.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>(3 classes)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-indent:-.25in'><span
+style='font-size:11.0pt;font-family:Symbol;mso-bidi-font-family:"Times New Roman";
+color:black'>·</span><span style='font-size:7.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+style='font-size:7.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span><b
+style='mso-bidi-font-weight:normal'><span style='font-size:11.0pt;font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";color:black'>Series
+solutions</span></b><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;</span><span style='font-size:11.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>of differential equations
+(6 classes)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-indent:-.25in'><span
+style='font-size:11.0pt;font-family:Symbol;mso-bidi-font-family:"Times New Roman";
+color:black'>·</span><span style='font-size:7.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+style='font-size:7.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span><b
+style='mso-bidi-font-weight:normal'><span style='font-size:11.0pt;font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";color:black'>Laplace</span></b><b
+style='mso-bidi-font-weight:normal'><span style='font-size:11.0pt;mso-bidi-font-size:
+12.0pt;font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;</span></b><b style='mso-bidi-font-weight:normal'><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>transform</span></b><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>&nbsp;</span><span style='font-size:11.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>solutions of differential equations (5 classes)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-indent:-.25in'><span
+style='font-size:11.0pt;font-family:Symbol;mso-bidi-font-family:"Times New Roman";
+color:black'>·</span><span style='font-size:7.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+style='font-size:7.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span><b
+style='mso-bidi-font-weight:normal'><span style='font-size:11.0pt;font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";color:black'>Systems</span></b><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>of first order linear equations (2 classes)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-indent:-.25in'><span
+style='font-size:11.0pt;font-family:Symbol;mso-bidi-font-family:"Times New Roman";
+color:black'>·</span><span style='font-size:7.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+style='font-size:7.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span><span
+class=GramE><b style='mso-bidi-font-weight:normal'><span style='font-size:11.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>Nonlinear</span></b></span><b style='mso-bidi-font-weight:normal'><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'> equations</span></b><span style='font-size:
+11.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>&nbsp;</span><span style='font-size:11.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>and</span><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;</span><b style='mso-bidi-font-weight:normal'><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>numerical methods</span></b><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>&nbsp;</span><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>&nbsp;</span><span style='font-size:11.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>(3 classes)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in'><span style='font-size:11.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in'><span style='font-size:11.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>The tentative schedule of the course has been posted on my
+website; see http://home.sandiego.edu/~pruski/</span><span style='font-size:
+11.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>m330f15schedule.html<span class=GramE><b
+style='mso-bidi-font-weight:normal'>&nbsp;.</b></span></span><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:11.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='font-size:14.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>2.</span><span style='font-size:7.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style='font-size:7.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>&nbsp;</span><b style='mso-bidi-font-weight:
+normal'><span style='font-size:14.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>Course learning outcomes</span></b><span
+style='font-size:14.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>:</span><span style='font-size:11.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in'><span style='font-size:11.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>Upon successful completion of this course, the student will:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-indent:-.25in'><span
+style='font-size:11.0pt;font-family:Symbol;mso-bidi-font-family:"Times New Roman";
+color:black'>·</span><span style='font-size:7.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+style='font-size:7.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>Demonstrate a working</span><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;<span class=GramE>knowledge&nbsp;&nbsp;of</span>&nbsp;</span><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>the theory of first-order differential equations
+and second-order linear differential equations, including the knowledge of</span><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span><b
+style='mso-bidi-font-weight:normal'><span style='font-size:11.0pt;font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";color:black'>theorems
+with assumptions</span></b><span style='font-size:11.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-indent:-.25in'><span
+style='font-size:11.0pt;font-family:Symbol;mso-bidi-font-family:"Times New Roman";
+color:black'>·</span><span style='font-size:7.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+style='font-size:7.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span><span
+class=GramE><span style='font-size:11.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>Be</span></span><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'> able to:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:1.0in;text-indent:-.25in'><span
+style='font-size:11.0pt;font-family:Symbol;mso-bidi-font-family:"Times New Roman";
+color:black'>·</span><span style='font-size:7.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+style='font-size:7.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span><span
+class=GramE><span style='font-size:11.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>apply</span></span><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'> the standard, calculus-based and algebra-based
+methods to solve various types of</span><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>&nbsp;</span><b style='mso-bidi-font-weight:
+normal'><span style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>first-order differential equations and linear
+second-order equations</span></b><span style='font-size:11.0pt;font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";color:black'>,<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:1.0in;text-indent:-.25in'><span
+style='font-size:11.0pt;font-family:Symbol;mso-bidi-font-family:"Times New Roman";
+color:black'>·</span><span style='font-size:7.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+style='font-size:7.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span><span
+class=GramE><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";color:black'>apply</span></span><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>the</span><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>&nbsp;</span><b style='mso-bidi-font-weight:
+normal'><span style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>power series method</span></b><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>,</span><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>&nbsp;</span><b style='mso-bidi-font-weight:
+normal'><span style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>Laplace</span></b><b style='mso-bidi-font-weight:
+normal'><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span></b><b
+style='mso-bidi-font-weight:normal'><span style='font-size:11.0pt;font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";color:black'>transform
+method</span></b><span style='font-size:11.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>, and a simple</span><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span><b
+style='mso-bidi-font-weight:normal'><span style='font-size:11.0pt;font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";color:black'>numerical
+method</span></b><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;</span><span style='font-size:11.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>to solve standard types of
+differential equations.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-indent:-.25in'><span
+style='font-size:11.0pt;font-family:Symbol;mso-bidi-font-family:"Times New Roman";
+color:black'>·</span><span style='font-size:7.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+style='font-size:7.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>Demonstrate the ability to:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:1.0in;text-indent:-.25in'><span
+style='font-size:11.0pt;font-family:Symbol;mso-bidi-font-family:"Times New Roman";
+color:black'>·</span><span style='font-size:7.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+style='font-size:7.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span><span
+class=GramE><b style='mso-bidi-font-weight:normal'><span style='font-size:11.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>solve</span></b></span><b style='mso-bidi-font-weight:normal'><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'> problems</span></b><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>&nbsp;</span><span style='font-size:11.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>in the topics listed above, including</span><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span><b
+style='mso-bidi-font-weight:normal'><span style='font-size:11.0pt;font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";color:black'>applications</span></b><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>from the field of physics and engineering,<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:1.0in;text-indent:-.25in'><span
+style='font-size:11.0pt;font-family:Symbol;mso-bidi-font-family:"Times New Roman";
+color:black'>·</span><span style='font-size:7.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+style='font-size:7.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span><span
+class=GramE><span style='font-size:11.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>use</span></span><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'> a</span><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>&nbsp;</span><b style='mso-bidi-font-weight:
+normal'><span style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>computer environment</span></b><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>, such as</span><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>&nbsp;</span><b style='mso-bidi-font-weight:
+normal'><span style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>MATLAB</span></b><span style='font-size:11.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>, to solve differential equations and</span><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span><b
+style='mso-bidi-font-weight:normal'><span style='font-size:11.0pt;font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";color:black'>visualize</span></b><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>and</span><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>&nbsp;</span><b style='mso-bidi-font-weight:
+normal'><span style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>interpret</span></b><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>&nbsp;</span><span style='font-size:11.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>the solutions,<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:1.0in;text-indent:-.25in'><span
+style='font-size:11.0pt;font-family:Symbol;mso-bidi-font-family:"Times New Roman";
+color:black'>·</span><span style='font-size:7.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+style='font-size:7.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span><span
+class=GramE><span style='font-size:11.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>understand</span></span><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'> simple</span><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>&nbsp;</span><b style='mso-bidi-font-weight:
+normal'><span style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>proofs</span></b><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>&nbsp;</span><span style='font-size:11.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>and write elementary proofs,<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:1.0in;text-indent:-.25in'><span
+style='font-size:11.0pt;font-family:Symbol;mso-bidi-font-family:"Times New Roman";
+color:black'>·</span><span style='font-size:7.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+style='font-size:7.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span><span
+class=GramE><b style='mso-bidi-font-weight:normal'><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>communicate</span></b></span><b
+style='mso-bidi-font-weight:normal'><span style='font-size:11.0pt;mso-bidi-font-size:
+12.0pt;font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;</span></b><b style='mso-bidi-font-weight:normal'><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>mathematical ideas</span></b><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>clearly.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:11.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>3.</span><span style='font-size:7.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style='font-size:7.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>&nbsp;</span><span style='font-size:14.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>Regular</span><span style='font-size:14.0pt;mso-bidi-font-size:
+12.0pt;font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;</span><b style='mso-bidi-font-weight:normal'><span
+style='font-size:14.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>attendance</span></b><span style='font-size:
+11.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>&nbsp;</span><span style='font-size:11.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>is really necessary. It is quite difficult to catch up with the
+material when you miss a class. It may become virtually impossible, if you miss
+several classes.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:11.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>4.</span><span style='font-size:7.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style='font-size:7.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>&nbsp;</span><span style='font-size:11.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>Some of you are taking this course as your first upper-division
+mathematics class. Mathematics is about</span><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>&nbsp;</span><b style='mso-bidi-font-weight:
+normal'><span style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>proving</span></b><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>&nbsp;</span><span style='font-size:11.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>that certain statements are true. We will be doing</span><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span><b
+style='mso-bidi-font-weight:normal'><span style='font-size:14.0pt;font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";color:black'>proofs</span></b><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>in class and you will be required to do simple</span><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span><b
+style='mso-bidi-font-weight:normal'><span style='font-size:14.0pt;font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";color:black'>proofs</span></b><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>in your assignments and during the exams.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:11.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>5.</span><span style='font-size:7.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style='font-size:7.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>&nbsp;</span><span style='font-size:14.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>The</span><span style='font-size:14.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;</span><b style='mso-bidi-font-weight:normal'><span
+style='font-size:14.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>textbook</span></b><span style='font-size:11.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>: Boyce,</span><span style='font-size:11.0pt;mso-bidi-font-size:
+12.0pt;font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;DiPrima</span><span style='font-size:11.0pt;font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";color:black'>,</span><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span><b
+style='mso-bidi-font-weight:normal'><i style='mso-bidi-font-style:normal'><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>Elementary Differential Equations. Eighth
+Edition</span></i></b><span style='font-size:11.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>. There is not enough time
+to lecture on everything in class, so that you will have to learn some material
+on your own. Reading the assigned material is absolutely</span><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span><b
+style='mso-bidi-font-weight:normal'><span style='font-size:11.0pt;font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";color:black'>essential</span></b><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>! Pop quizzes will include questions on the
+assigned reading as a gentle method of enforcing your reading.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:11.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>6.</span><span style='font-size:7.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style='font-size:7.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>&nbsp;</span><span style='font-size:11.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>The course will include a</span><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>&nbsp;</span><b style='mso-bidi-font-weight:
+normal'><span style='font-size:14.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>MATLAB</span></b><span style='font-size:14.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>&nbsp;</span><span style='font-size:14.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>component</span><span style='font-size:11.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>.</span><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span><b
+style='mso-bidi-font-weight:normal'><span style='font-size:14.0pt;font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";color:black'>MATLAB<sup>®</sup></span></b><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>is a high-level language and interactive
+environment that enables you to perform computationally intensive tasks,
+including solving differential equations, analyzing the solutions, and
+visualizing them. Several homework assignments will contain a</span><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span><b
+style='mso-bidi-font-weight:normal'><span style='font-size:14.0pt;font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";color:black'>MATLAB</span></b><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>component. You are also encouraged to use</span><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span><b
+style='mso-bidi-font-weight:normal'><span style='font-size:14.0pt;font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";color:black'>MATLAB</span></b><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>,</span><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>&nbsp;</span><b style='mso-bidi-font-weight:
+normal'><span style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>Maple</span></b><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>&nbsp;</span><span style='font-size:11.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>or other resources to avoid tedious computations in your homework
+assignment exercises.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:11.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span><span
+style='font-size:10.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>7.</span><span style='font-size:7.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style='font-size:7.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>&nbsp;</span><b style='mso-bidi-font-weight:
+normal'><span style='font-size:14.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>Office hours</span></b><span style='font-size:
+11.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>&nbsp;</span><span style='font-size:11.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>(Dr. Lukasz Pruski, Serra 149, x. 4035):<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:11.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;<o:p></o:p></span></p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+ style='margin-left:.5in;border-collapse:collapse;mso-padding-alt:0in 0in 0in 0in'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td width=131 valign=top style='width:130.5pt;border:solid black 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-left:.25in'><b style='mso-bidi-font-weight:
+  normal'><span style='font-size:11.0pt;font-family:"Times New Roman";
+  mso-bidi-font-family:"Times New Roman"'>Monday</span></b><span
+  style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+  "Times New Roman"'><o:p></o:p></span></p>
+  </td>
+  <td width=180 valign=top style='width:2.5in;border:solid black 1.0pt;
+  border-left:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-left:.25in;text-align:center'><b
+  style='mso-bidi-font-weight:normal'><span style='font-size:11.0pt;font-family:
+  "Times New Roman";mso-bidi-font-family:"Times New Roman"'>10:10 - 11:10</span></b><span
+  style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+  "Times New Roman"'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td width=131 valign=top style='width:130.5pt;border:solid black 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-left:.25in'><b style='mso-bidi-font-weight:
+  normal'><span style='font-size:11.0pt;font-family:"Times New Roman";
+  mso-bidi-font-family:"Times New Roman"'>Tuesday</span></b><span
+  style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+  "Times New Roman"'><o:p></o:p></span></p>
+  </td>
+  <td width=180 valign=top style='width:2.5in;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-left:.25in;text-align:center'><b
+  style='mso-bidi-font-weight:normal'><span style='font-size:11.0pt;font-family:
+  "Times New Roman";mso-bidi-font-family:"Times New Roman"'>2:20 - 3:50</span></b><span
+  style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+  "Times New Roman"'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2'>
+  <td width=131 valign=top style='width:130.5pt;border:solid black 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-left:.25in'><b style='mso-bidi-font-weight:
+  normal'><span style='font-size:11.0pt;font-family:"Times New Roman";
+  mso-bidi-font-family:"Times New Roman"'>Wednesday</span></b><span
+  style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+  "Times New Roman"'><o:p></o:p></span></p>
+  </td>
+  <td width=180 valign=top style='width:2.5in;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-left:.25in;text-align:center'><b
+  style='mso-bidi-font-weight:normal'><span style='font-size:11.0pt;font-family:
+  "Times New Roman";mso-bidi-font-family:"Times New Roman"'>4:30 - 5:30</span></b><span
+  style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+  "Times New Roman"'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3;mso-yfti-lastrow:yes'>
+  <td width=131 valign=top style='width:130.5pt;border:solid black 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-left:.25in'><b style='mso-bidi-font-weight:
+  normal'><span style='font-size:11.0pt;font-family:"Times New Roman";
+  mso-bidi-font-family:"Times New Roman"'>Friday</span></b><span
+  style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+  "Times New Roman"'><o:p></o:p></span></p>
+  </td>
+  <td width=180 valign=top style='width:2.5in;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-left:.25in;text-align:center'><b
+  style='mso-bidi-font-weight:normal'><span style='font-size:11.0pt;font-family:
+  "Times New Roman";mso-bidi-font-family:"Times New Roman"'>2 - 3:30</span></b><span
+  style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+  "Times New Roman"'><o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span style='font-size:11.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in'><span class=GramE><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>and</span></span><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>at other times,</span><span style='font-size:
+11.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>&nbsp;</span><b style='mso-bidi-font-weight:
+normal'><span style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>by appointment</span></b><span style='font-size:
+11.0pt;font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>. (<b style='mso-bidi-font-weight:normal'>NOTE:</b></span><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>These days/times are tentative at this point.)<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:11.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>8.</span><span style='font-size:7.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style='font-size:7.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>&nbsp;</span><b style='mso-bidi-font-weight:
+normal'><span style='font-size:14.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>Contact</span></b><span style='font-size:14.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>:</span><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;</span><span style='font-size:11.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>The best way to contact me
+is by using e-mail (<b style='mso-bidi-font-weight:normal'><a
+href="mailto:pruski@sandiego.edu"><span style='mso-bidi-font-size:12.0pt;
+color:purple'>pruski@sandiego.edu</span></a></b></span><b style='mso-bidi-font-weight:
+normal'><i style='mso-bidi-font-style:normal'><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>&nbsp;</span></i></b><span style='font-size:
+11.0pt;font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>or</span><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;</span><b style='mso-bidi-font-weight:normal'><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>lukaszpruski@gmail.com</span></b><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>). I read e-mail many times a day.</span><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>&nbsp;I have voice mail (<b style='mso-bidi-font-weight:
+normal'>x. 4035</b>), but I often forget to check it. If for some reason you
+are unable to contact me, try calling our departmental Executive Assistant,
+Tina, at extension</span><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;</span><b style='mso-bidi-font-weight:normal'><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>4706</span></b><span style='font-size:11.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:11.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>9.</span><span style='font-size:7.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style='font-size:7.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>&nbsp;</span><b style='mso-bidi-font-weight:
+normal'><span style='font-size:14.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>Course website</span></b><span style='font-size:
+11.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>&nbsp;</span><span style='font-size:11.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>can be found at http://home.sandiego.edu/~pruski/</span><span
+class=GramE><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";color:black'>m330f15.html
+.</span></span><span style='font-size:11.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:11.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>10.</span><span style='font-size:7.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;</span><span style='font-size:7.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;</span><b style='mso-bidi-font-weight:normal'><span
+style='font-size:14.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>Homework assignments</span></b><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>will be assigned and collected weekly. For many
+of the assigned exercises, a</span><span style='font-size:11.0pt;mso-bidi-font-size:
+12.0pt;font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;</span><b style='mso-bidi-font-weight:normal'><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>BOB</span></b><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>&nbsp;</span><span style='font-size:11.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>(back of the book) answer will be available. The total homework
+assignment score will count for</span><span style='font-size:11.0pt;mso-bidi-font-size:
+12.0pt;font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;</span><b style='mso-bidi-font-weight:normal'><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>25%</span></b><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>&nbsp;</span><span style='font-size:11.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>of the course grade.</span><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>&nbsp;</span><b style='mso-bidi-font-weight:
+normal'><span style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>Late assignments</span></b><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>will not be accepted unless you have a valid
+reason</span><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;</span><b style='mso-bidi-font-weight:normal'><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>and</span></b><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>&nbsp;</span><span style='font-size:11.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>you arrange it with me</span><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>&nbsp;</span><b style='mso-bidi-font-weight:
+normal'><u><span style='font-size:11.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>in advance</span></u></b><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in'><span style='font-size:11.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>Mathematics is about an</span><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>&nbsp;</span><b style='mso-bidi-font-weight:
+normal'><span style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>organized, focused, and logical way of thinking</span></b><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>. When you solve math problems, the actual
+answer is less important than the way you arrived at this answer. Therefore,
+when you submit your homework assignments you should show not just the final
+answer, <span class=GramE>but</span> the</span><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>&nbsp;</span><b style='mso-bidi-font-weight:
+normal'><span style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>main steps</span></b><span style='font-size:
+11.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>&nbsp;</span><span style='font-size:11.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>how you arrived at the answer. Think about your solution being a</span><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span><b
+style='mso-bidi-font-weight:normal'><span style='font-size:11.0pt;font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";color:black'>guide</span></b><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>that helps the reader to get from the problem
+statement to the answer. Your solution is not just a product; it is the</span><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span><b
+style='mso-bidi-font-weight:normal'><span style='font-size:11.0pt;font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";color:black'>process</span></b><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>that yields this product.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:11.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span><span
+style='font-size:10.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>11.</span><span style='font-size:7.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;</span><span style='font-size:7.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;</span><span style='font-size:11.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>A</span><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>small</span><b style='mso-bidi-font-weight:normal'><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span></b><b
+style='mso-bidi-font-weight:normal'><span style='font-size:14.0pt;font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";color:black'>research
+project</span></b><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;</span><span style='font-size:11.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>(individual or in pairs of
+students) will be assigned in</span><span style='font-size:11.0pt;mso-bidi-font-size:
+12.0pt;font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;</span><b style='mso-bidi-font-weight:normal'><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>November</span></b><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>&nbsp;</span><span style='font-size:11.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>to be completed by</span><span style='font-size:11.0pt;mso-bidi-font-size:
+12.0pt;font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;</span><b style='mso-bidi-font-weight:normal'><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>December 7</span></b><span style='font-size:
+11.0pt;font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>. Each project requires a</span><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>&nbsp;</span><b style='mso-bidi-font-weight:
+normal'><span style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>write-up</span></b><span style='font-size:11.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>;</span><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;</span><b style='mso-bidi-font-weight:normal'><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>volunteers</span></b><span style='font-size:
+11.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>&nbsp;</span><span style='font-size:11.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>will be solicited to</span><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>&nbsp;</span><b style='mso-bidi-font-weight:
+normal'><span style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>present</span></b><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>&nbsp;</span><span style='font-size:11.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>their projects in class. The project counts for</span><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span><b
+style='mso-bidi-font-weight:normal'><span style='font-size:11.0pt;font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";color:black'>5%</span></b><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>of the course grade.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:11.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:11.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:11.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:11.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>12.</span><span style='font-size:7.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;</span><span style='font-size:7.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;</span><span style='font-size:11.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>There will be about 10</span><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span><b
+style='mso-bidi-font-weight:normal'><span style='font-size:14.0pt;font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";color:black'>pop-quizzes</span></b><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>(not announced in advance), i.e., approximately
+one <span class=GramE>quiz</span> a week. Quiz questions will refer to the
+recently covered material</span><span style='font-size:11.0pt;mso-bidi-font-size:
+12.0pt;font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;</span><b style='mso-bidi-font-weight:normal'><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>and</span></b><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>&nbsp;</span><span style='font-size:11.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>to the new material you were supposed to read. Three lowest quiz
+scores will be dropped, and the remaining scores will count for</span><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span><b
+style='mso-bidi-font-weight:normal'><span style='font-size:11.0pt;font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";color:black'>25%</span></b><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>of the course grade. Quizzes cannot be made up
+unless you have a valid reason for not taking the quiz and</span><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span><b
+style='mso-bidi-font-weight:normal'><span style='font-size:11.0pt;font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";color:black'>you
+notify me</span></b><b style='mso-bidi-font-weight:normal'><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span></b><b
+style='mso-bidi-font-weight:normal'><u><span style='font-size:11.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>in advance</span></u></b><b style='mso-bidi-font-weight:normal'><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span></b><b
+style='mso-bidi-font-weight:normal'><span style='font-size:11.0pt;font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";color:black'>of your
+absence</span></b><span style='font-size:11.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:11.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>13.</span><span style='font-size:7.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;</span><span style='font-size:7.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;</span><span style='font-size:11.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>The</span><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span><b
+style='mso-bidi-font-weight:normal'><span style='font-size:14.0pt;font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";color:black'>midterm
+exam</span></b><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;</span><span style='font-size:11.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>will take place on
+Wednesday,</span><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;</span><b style='mso-bidi-font-weight:normal'><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>October 21</span></b><span style='font-size:
+11.0pt;font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>. The exam is of</span><span style='font-size:11.0pt;mso-bidi-font-size:
+12.0pt;font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;</span><b style='mso-bidi-font-weight:normal'><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>closed-book</span></b><span style='font-size:
+11.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>&nbsp;</span><span style='font-size:11.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>variety. The test score will count for</span><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span><b
+style='mso-bidi-font-weight:normal'><span style='font-size:11.0pt;font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";color:black'>15%</span></b><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>of the course grade. A test can be made up only
+if you have an actual emergency and</span><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>&nbsp;</span><b style='mso-bidi-font-weight:
+normal'><span style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>if you notify me</span></b><b style='mso-bidi-font-weight:
+normal'><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span></b><b
+style='mso-bidi-font-weight:normal'><u><span style='font-size:11.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>in advance</span></u></b><b style='mso-bidi-font-weight:normal'><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span></b><b
+style='mso-bidi-font-weight:normal'><span style='font-size:11.0pt;font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";color:black'>about
+your absence</span></b><span style='font-size:11.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:11.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>14.</span><span style='font-size:7.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;</span><span style='font-size:7.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;</span><span style='font-size:11.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>The</span><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span><b
+style='mso-bidi-font-weight:normal'><span style='font-size:14.0pt;font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";color:black'>final
+exam</span></b><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;</span><span style='font-size:11.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>(Wednesday,</span><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span><b
+style='mso-bidi-font-weight:normal'><span style='font-size:11.0pt;font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";color:black'>December
+16, 5:00 &#8211; 7:30</span></b><span style='font-size:11.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>) will be cumulative and
+its score will count for</span><span style='font-size:11.0pt;mso-bidi-font-size:
+12.0pt;font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;</span><b style='mso-bidi-font-weight:normal'><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>30%</span></b><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>&nbsp;</span><span style='font-size:11.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>of the course grade. The final exam will also be of</span><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span><b
+style='mso-bidi-font-weight:normal'><span style='font-size:11.0pt;font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";color:black'>closed
+book</span></b><b style='mso-bidi-font-weight:normal'><span style='font-size:
+11.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>&nbsp;</span></b><span style='font-size:11.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>type.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:11.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>15.</span><span style='font-size:7.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;</span><span style='font-size:7.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;</span><span style='font-size:11.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>The</span><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span><b
+style='mso-bidi-font-weight:normal'><span style='font-size:14.0pt;font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";color:black'>calculator
+policy</span></b><span style='font-size:11.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>: No calculators beyond
+TI-83/4,</span><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;smartphones</span><span style='font-size:11.0pt;font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";color:black'>, iPods,</span><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;iPads</span><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>, tablets, etc., are allowed on quizzes and
+exams.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:11.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>16.</span><span style='font-size:7.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;</span><span style='font-size:7.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;</span><b style='mso-bidi-font-weight:normal'><span
+style='font-size:14.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>Grading criteria</span></b><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>are as follows:<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:11.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;<o:p></o:p></span></p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+ style='margin-left:.5in;border-collapse:collapse;mso-padding-alt:0in 0in 0in 0in'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td width=113 valign=top style='width:112.5pt;border-top:1.5pt;border-left:
+  1.5pt;border-bottom:1.0pt;border-right:1.0pt;border-color:black;border-style:
+  solid;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-left:.25in;text-align:center'><b
+  style='mso-bidi-font-weight:normal'><span style='font-size:11.0pt;font-family:
+  "Times New Roman";mso-bidi-font-family:"Times New Roman"'>Total percentage</span></b><span
+  style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+  "Times New Roman"'><o:p></o:p></span></p>
+  </td>
+  <td width=99 valign=top style='width:99.0pt;border-top:solid black 1.5pt;
+  border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-left:.25in;text-align:center'><b
+  style='mso-bidi-font-weight:normal'><span style='font-size:11.0pt;font-family:
+  "Times New Roman";mso-bidi-font-family:"Times New Roman"'>Grade</span></b><span
+  style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+  "Times New Roman"'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td width=113 valign=top style='width:112.5pt;border-top:none;border-left:
+  solid black 1.5pt;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-left:.25in;text-align:center'><b
+  style='mso-bidi-font-weight:normal'><span style='font-size:11.0pt;font-family:
+  "Times New Roman";mso-bidi-font-family:"Times New Roman"'>92% and above</span></b><span
+  style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+  "Times New Roman"'><o:p></o:p></span></p>
+  </td>
+  <td width=99 valign=top style='width:99.0pt;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-left:.25in;text-align:center'><b
+  style='mso-bidi-font-weight:normal'><span style='font-size:11.0pt;font-family:
+  "Times New Roman";mso-bidi-font-family:"Times New Roman"'>A</span></b><span
+  style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+  "Times New Roman"'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2'>
+  <td width=113 valign=top style='width:112.5pt;border-top:none;border-left:
+  solid black 1.5pt;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-left:.25in;text-align:center'><b
+  style='mso-bidi-font-weight:normal'><span style='font-size:11.0pt;font-family:
+  "Times New Roman";mso-bidi-font-family:"Times New Roman"'>90% - 92%</span></b><span
+  style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+  "Times New Roman"'><o:p></o:p></span></p>
+  </td>
+  <td width=99 valign=top style='width:99.0pt;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-left:.25in;text-align:center'><b
+  style='mso-bidi-font-weight:normal'><span style='font-size:11.0pt;font-family:
+  "Times New Roman";mso-bidi-font-family:"Times New Roman"'>A-</span></b><span
+  style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+  "Times New Roman"'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3'>
+  <td width=113 valign=top style='width:112.5pt;border-top:none;border-left:
+  solid black 1.5pt;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-left:.25in;text-align:center'><b
+  style='mso-bidi-font-weight:normal'><span style='font-size:11.0pt;font-family:
+  "Times New Roman";mso-bidi-font-family:"Times New Roman"'>88% - 90%</span></b><span
+  style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+  "Times New Roman"'><o:p></o:p></span></p>
+  </td>
+  <td width=99 valign=top style='width:99.0pt;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-left:.25in;text-align:center'><b
+  style='mso-bidi-font-weight:normal'><span style='font-size:11.0pt;font-family:
+  "Times New Roman";mso-bidi-font-family:"Times New Roman"'>B+</span></b><span
+  style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+  "Times New Roman"'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:4'>
+  <td width=113 valign=top style='width:112.5pt;border-top:none;border-left:
+  solid black 1.5pt;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-left:.25in;text-align:center'><b
+  style='mso-bidi-font-weight:normal'><span style='font-size:11.0pt;font-family:
+  "Times New Roman";mso-bidi-font-family:"Times New Roman"'>82% - 88%</span></b><span
+  style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+  "Times New Roman"'><o:p></o:p></span></p>
+  </td>
+  <td width=99 valign=top style='width:99.0pt;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-left:.25in;text-align:center'><b
+  style='mso-bidi-font-weight:normal'><span style='font-size:11.0pt;font-family:
+  "Times New Roman";mso-bidi-font-family:"Times New Roman"'>B</span></b><span
+  style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+  "Times New Roman"'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:5'>
+  <td width=113 valign=top style='width:112.5pt;border-top:none;border-left:
+  solid black 1.5pt;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-left:.25in;text-align:center'><b
+  style='mso-bidi-font-weight:normal'><span style='font-size:11.0pt;font-family:
+  "Times New Roman";mso-bidi-font-family:"Times New Roman"'>80% - 82%</span></b><span
+  style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+  "Times New Roman"'><o:p></o:p></span></p>
+  </td>
+  <td width=99 valign=top style='width:99.0pt;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-left:.25in;text-align:center'><b
+  style='mso-bidi-font-weight:normal'><span style='font-size:11.0pt;font-family:
+  "Times New Roman";mso-bidi-font-family:"Times New Roman"'>B-</span></b><span
+  style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+  "Times New Roman"'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:6'>
+  <td width=113 valign=top style='width:112.5pt;border-top:none;border-left:
+  solid black 1.5pt;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-left:.25in;text-align:center'><b
+  style='mso-bidi-font-weight:normal'><span style='font-size:11.0pt;font-family:
+  "Times New Roman";mso-bidi-font-family:"Times New Roman"'>75% - 80%</span></b><span
+  style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+  "Times New Roman"'><o:p></o:p></span></p>
+  </td>
+  <td width=99 valign=top style='width:99.0pt;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-left:.25in;text-align:center'><b
+  style='mso-bidi-font-weight:normal'><span style='font-size:11.0pt;font-family:
+  "Times New Roman";mso-bidi-font-family:"Times New Roman"'>C+</span></b><span
+  style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+  "Times New Roman"'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:7'>
+  <td width=113 valign=top style='width:112.5pt;border-top:none;border-left:
+  solid black 1.5pt;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-left:.25in;text-align:center'><b
+  style='mso-bidi-font-weight:normal'><span style='font-size:11.0pt;font-family:
+  "Times New Roman";mso-bidi-font-family:"Times New Roman"'>65% - 75%</span></b><span
+  style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+  "Times New Roman"'><o:p></o:p></span></p>
+  </td>
+  <td width=99 valign=top style='width:99.0pt;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-left:.25in;text-align:center'><b
+  style='mso-bidi-font-weight:normal'><span style='font-size:11.0pt;font-family:
+  "Times New Roman";mso-bidi-font-family:"Times New Roman"'>C</span></b><span
+  style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+  "Times New Roman"'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:8'>
+  <td width=113 valign=top style='width:112.5pt;border-top:none;border-left:
+  solid black 1.5pt;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-left:.25in;text-align:center'><b
+  style='mso-bidi-font-weight:normal'><span style='font-size:11.0pt;font-family:
+  "Times New Roman";mso-bidi-font-family:"Times New Roman"'>60% - 65%</span></b><span
+  style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+  "Times New Roman"'><o:p></o:p></span></p>
+  </td>
+  <td width=99 valign=top style='width:99.0pt;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-left:.25in;text-align:center'><b
+  style='mso-bidi-font-weight:normal'><span style='font-size:11.0pt;font-family:
+  "Times New Roman";mso-bidi-font-family:"Times New Roman"'>C-</span></b><span
+  style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+  "Times New Roman"'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:9'>
+  <td width=113 valign=top style='width:112.5pt;border-top:none;border-left:
+  solid black 1.5pt;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-left:.25in;text-align:center'><b
+  style='mso-bidi-font-weight:normal'><span style='font-size:11.0pt;font-family:
+  "Times New Roman";mso-bidi-font-family:"Times New Roman"'>50% - 60%</span></b><span
+  style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+  "Times New Roman"'><o:p></o:p></span></p>
+  </td>
+  <td width=99 valign=top style='width:99.0pt;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-left:.25in;text-align:center'><b
+  style='mso-bidi-font-weight:normal'><span style='font-size:11.0pt;font-family:
+  "Times New Roman";mso-bidi-font-family:"Times New Roman"'>D</span></b><span
+  style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+  "Times New Roman"'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:10;mso-yfti-lastrow:yes'>
+  <td width=113 valign=top style='width:112.5pt;border-top:none;border-left:
+  solid black 1.5pt;border-bottom:solid black 1.5pt;border-right:solid black 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-left:.25in;text-align:center'><b
+  style='mso-bidi-font-weight:normal'><span style='font-size:11.0pt;font-family:
+  "Times New Roman";mso-bidi-font-family:"Times New Roman"'>Below 50%</span></b><span
+  style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+  "Times New Roman"'><o:p></o:p></span></p>
+  </td>
+  <td width=99 valign=top style='width:99.0pt;border-top:none;border-left:none;
+  border-bottom:solid black 1.5pt;border-right:solid black 1.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='margin-left:.25in;text-align:center'><b
+  style='mso-bidi-font-weight:normal'><span style='font-size:11.0pt;font-family:
+  "Times New Roman";mso-bidi-font-family:"Times New Roman"'>F</span></b><span
+  style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+  "Times New Roman"'><o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span style='font-size:11.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in'><b style='mso-bidi-font-weight:
+normal'><span style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>Note:</span></b><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>&nbsp;</span><span style='font-size:11.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>I will “curve grades up” in the</span><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>&nbsp;</span><b style='mso-bidi-font-weight:
+normal'><span style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>unlikely</span></b><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>&nbsp;</span><span style='font-size:11.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>case that the number of</span><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>&nbsp;</span><b style='mso-bidi-font-weight:
+normal'><span style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>A’</span></b><span style='font-size:11.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>s and</span><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;</span><b style='mso-bidi-font-weight:normal'><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>B’</span></b><span style='font-size:11.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>s falls below about 40% of the current enrollment.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:11.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>17.</span><span style='font-size:7.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;</span><span style='font-size:7.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;</span><span style='font-size:11.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>The Mathematics and
+Computer Science Department strongly promotes</span><span style='font-size:
+11.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>&nbsp;</span><b style='mso-bidi-font-weight:
+normal'><span style='font-size:14.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>Academic Integrity</span></b><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>. I hope issues related to academic integrity
+will not arise in our course. There have been some cases of cheating in
+math/computer science courses in the past &#8211; copying someone else’s work
+or cheating during exams. Depending on the severity of the case, the possible
+consequences include: assigning the score of 0 on the given assignment,
+lowering the course grade, or even assigning F in the course.<o:p></o:p></span></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+</div>
+
+</body>
+
+</html>

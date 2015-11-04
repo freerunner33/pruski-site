@@ -1,0 +1,414 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<title>Fall 2015: Differential Equations</title>
+<meta name=Title content="">
+<meta name=Keywords content="">
+<meta http-equiv=Content-Type content="text/html; charset=macintosh">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 2008">
+<meta name=Originator content="Microsoft Word 2008">
+<link rel=File-List href="m330f15assignments_files/filelist.xml">
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Heath Fontaine</o:Author>
+  <o:Template>Normal.dotm</o:Template>
+  <o:LastAuthor>Heath Fontaine</o:LastAuthor>
+  <o:Revision>1</o:Revision>
+  <o:TotalTime>0</o:TotalTime>
+  <o:Created>2015-11-04T00:26:00Z</o:Created>
+  <o:LastSaved>2015-11-04T00:26:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>330</o:Words>
+  <o:Characters>1885</o:Characters>
+  <o:Company>School</o:Company>
+  <o:Lines>15</o:Lines>
+  <o:Paragraphs>3</o:Paragraphs>
+  <o:CharactersWithSpaces>2314</o:CharactersWithSpaces>
+  <o:Version>12.0</o:Version>
+ </o:DocumentProperties>
+ <o:OfficeDocumentSettings>
+  <o:AllowPNG/>
+ </o:OfficeDocumentSettings>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:TrackMoves>false</w:TrackMoves>
+  <w:TrackFormatting/>
+  <w:PunctuationKerning/>
+  <w:DrawingGridHorizontalSpacing>18 pt</w:DrawingGridHorizontalSpacing>
+  <w:DrawingGridVerticalSpacing>18 pt</w:DrawingGridVerticalSpacing>
+  <w:DisplayHorizontalDrawingGridEvery>0</w:DisplayHorizontalDrawingGridEvery>
+  <w:DisplayVerticalDrawingGridEvery>0</w:DisplayVerticalDrawingGridEvery>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:DontGrowAutofit/>
+   <w:DontAutofitConstrainedTables/>
+   <w:DontVertAlignInTxbx/>
+  </w:Compatibility>
+ </w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" LatentStyleCount="276">
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+@font-face
+	{font-family:Times;
+	panose-1:2 0 5 0 0 0 0 0 0 0;
+	mso-font-charset:0;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 0 0 0 1 0;}
+@font-face
+	{font-family:Cambria;
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 0 0 0 1 0;}
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Cambria;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+p
+	{margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ascii-font-family:Times;
+	mso-fareast-font-family:Cambria;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Times;
+	mso-bidi-font-family:"Times New Roman";}
+span.apple-converted-space
+	{mso-style-name:apple-converted-space;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:minor-latin;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:minor-latin;}
+</style>
+<![endif]-->
+</head>
+
+<body bgcolor=white lang=EN-US style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+style='font-size:24.0pt;font-family:Times;color:black'>Fall 2015: MATH 330,
+Ordinary Differential Equations</span></b><b style='mso-bidi-font-weight:normal'><span
+style='font-size:24.0pt;mso-bidi-font-size:12.0pt;font-family:Times;color:black'>&nbsp;</span></b><b
+style='mso-bidi-font-weight:normal'><span style='font-size:24.0pt;font-family:
+Times;color:black'><br>
+Assignments:</span></b><b style='mso-bidi-font-weight:normal'><span
+style='font-size:24.0pt;mso-bidi-font-size:12.0pt;font-family:Times;color:black'>&nbsp;</span></b><b
+style='mso-bidi-font-weight:normal'><span style='font-size:24.0pt;font-family:
+Times;color:black'><br>
+Homework Assignment #1: (Due Wednesday, 9/16, in class)</span></b><b
+style='mso-bidi-font-weight:normal'><span style='font-size:24.0pt;mso-bidi-font-size:
+12.0pt;font-family:Times;color:black'>&nbsp;</span></b><b style='mso-bidi-font-weight:
+normal'><span style='font-size:24.0pt;font-family:Times;color:black'><br>
+Section 1.1: 2, 8, 10, 12, 13, 14, 15, 16, 17, 22, 23</span></b><b
+style='mso-bidi-font-weight:normal'><span style='font-size:24.0pt;mso-bidi-font-size:
+12.0pt;font-family:Times;color:black'>&nbsp;</span></b><b style='mso-bidi-font-weight:
+normal'><span style='font-size:24.0pt;font-family:Times;color:black'><br>
+(Note: when they want you to sketch the direction field, sketch just six to 10
+arrows in various parts of the plane.)</span></b><b style='mso-bidi-font-weight:
+normal'><span style='font-size:24.0pt;mso-bidi-font-size:12.0pt;font-family:
+Times;color:black'>&nbsp;</span></b><b style='mso-bidi-font-weight:normal'><span
+style='font-size:24.0pt;font-family:Times;color:black'><br>
+Section 1.2: 3, 4, 8, 13, 14</span></b><b style='mso-bidi-font-weight:normal'><span
+style='font-size:24.0pt;mso-bidi-font-size:12.0pt;font-family:Times;color:black'>&nbsp;</span></b><b
+style='mso-bidi-font-weight:normal'><span style='font-size:24.0pt;font-family:
+Times;color:black'><br>
+Section 1.3: 7, 10, 12, 18, 19, 20</span></b><b style='mso-bidi-font-weight:
+normal'><span style='font-size:24.0pt;mso-bidi-font-size:12.0pt;font-family:
+Times;color:black'>&nbsp;</span></b><b style='mso-bidi-font-weight:normal'><span
+style='font-size:24.0pt;font-family:Times;color:black'><br>
+Section 2.1: 4, 8, 9 (just part c for all three), 14, 15, 17, 30, 31, 35, 36,
+40, 41</span></b><b style='mso-bidi-font-weight:normal'><span style='font-size:
+24.0pt;mso-bidi-font-size:12.0pt;font-family:Times;color:black'>&nbsp;</span></b><b
+style='mso-bidi-font-weight:normal'><span style='font-size:24.0pt;font-family:
+Times;color:black'><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-top:.1pt;margin-right:0in;margin-bottom:.1pt;
+margin-left:0in;mso-para-margin-top:.01gd;mso-para-margin-right:0in;mso-para-margin-bottom:
+.01gd;mso-para-margin-left:0in'><b style='mso-bidi-font-weight:normal'><span
+style='font-size:24.0pt;font-family:Times;mso-bidi-font-family:"Times New Roman";
+color:black'><br>
+Homework Assignment #2:</span></b><b style='mso-bidi-font-weight:normal'><span
+style='font-size:24.0pt;mso-bidi-font-size:12.0pt;font-family:Times;mso-bidi-font-family:
+"Times New Roman";color:black'>&nbsp;</span></b><b style='mso-bidi-font-weight:
+normal'><span style='font-size:24.0pt;font-family:Times;mso-bidi-font-family:
+"Times New Roman";color:black'><br>
+Due Monday, 9/28, in class.</span></b><b style='mso-bidi-font-weight:normal'><span
+style='font-size:24.0pt;mso-bidi-font-size:12.0pt;font-family:Times;mso-bidi-font-family:
+"Times New Roman";color:black'>&nbsp;</span></b><b style='mso-bidi-font-weight:
+normal'><span style='font-size:24.0pt;font-family:Times;mso-bidi-font-family:
+"Times New Roman";color:black'><br>
+Section 2.2: 4, 5, 6, 7, 8, 22, 26, 27, 29</span></b><b style='mso-bidi-font-weight:
+normal'><span style='font-size:24.0pt;mso-bidi-font-size:12.0pt;font-family:
+Times;mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span></b><b
+style='mso-bidi-font-weight:normal'><span style='font-size:24.0pt;font-family:
+Times;mso-bidi-font-family:"Times New Roman";color:black'><br>
+Now, read Exercise 30 carefully and use the method to solve 31 and 32 (only
+parts a and b in both).</span></b><b style='mso-bidi-font-weight:normal'><span
+style='font-size:24.0pt;mso-bidi-font-size:12.0pt;font-family:Times;mso-bidi-font-family:
+"Times New Roman";color:black'>&nbsp;</span></b><b style='mso-bidi-font-weight:
+normal'><span style='font-size:24.0pt;font-family:Times;mso-bidi-font-family:
+"Times New Roman";color:black'><br>
+Section 2.3: 2, 3, 7, 8, 9, 10, 16, 20ab, 21ab</span></b><b style='mso-bidi-font-weight:
+normal'><span style='font-size:24.0pt;mso-bidi-font-size:12.0pt;font-family:
+Times;mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span></b><b
+style='mso-bidi-font-weight:normal'><span style='font-size:24.0pt;font-family:
+Times;mso-bidi-font-family:"Times New Roman";color:black'><br>
+Section 2.4: 2, 3, 9, 12, 23, 25, 28, 30</span></b><b style='mso-bidi-font-weight:
+normal'><span style='font-size:24.0pt;mso-bidi-font-size:12.0pt;font-family:
+Times;mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span></b><b
+style='mso-bidi-font-weight:normal'><span style='font-size:24.0pt;font-family:
+Times;mso-bidi-font-family:"Times New Roman";color:black'><br>
+Section 2.5: 2, 4, 12, 15a, 22</span></b><b style='mso-bidi-font-weight:normal'><span
+style='font-size:24.0pt;mso-bidi-font-size:12.0pt;font-family:Times;mso-bidi-font-family:
+"Times New Roman";color:black'>&nbsp;</span></b><b style='mso-bidi-font-weight:
+normal'><span style='font-size:24.0pt;font-family:Times;mso-bidi-font-family:
+"Times New Roman";color:black'><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-top:.1pt;margin-right:0in;margin-bottom:.1pt;
+margin-left:0in;mso-para-margin-top:.01gd;mso-para-margin-right:0in;mso-para-margin-bottom:
+.01gd;mso-para-margin-left:0in'><b style='mso-bidi-font-weight:normal'><span
+style='font-size:24.0pt;font-family:Times;mso-bidi-font-family:"Times New Roman";
+color:black'><br>
+Homework Assignment #3:</span></b><b style='mso-bidi-font-weight:normal'><span
+style='font-size:24.0pt;mso-bidi-font-size:12.0pt;font-family:Times;mso-bidi-font-family:
+"Times New Roman";color:black'>&nbsp;</span></b><b style='mso-bidi-font-weight:
+normal'><span style='font-size:24.0pt;font-family:Times;mso-bidi-font-family:
+"Times New Roman";color:black'><br>
+Due Monday, 10/5, in class</span></b><b style='mso-bidi-font-weight:normal'><span
+style='font-size:24.0pt;mso-bidi-font-size:12.0pt;font-family:Times;mso-bidi-font-family:
+"Times New Roman";color:black'>&nbsp;</span></b><b style='mso-bidi-font-weight:
+normal'><span style='font-size:24.0pt;font-family:Times;mso-bidi-font-family:
+"Times New Roman";color:black'><br>
+Section 2.6: 3, 5, 6, 12, 13, 16, 18</span></b><b style='mso-bidi-font-weight:
+normal'><span style='font-size:24.0pt;mso-bidi-font-size:12.0pt;font-family:
+Times;mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span></b><b
+style='mso-bidi-font-weight:normal'><span style='font-size:24.0pt;font-family:
+Times;mso-bidi-font-family:"Times New Roman";color:black'><br>
+Section 2.7: Manually solve 1ad, 4ad</span></b><b style='mso-bidi-font-weight:
+normal'><span style='font-size:24.0pt;mso-bidi-font-size:12.0pt;font-family:
+Times;mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span></b><b
+style='mso-bidi-font-weight:normal'><span style='font-size:24.0pt;font-family:
+Times;mso-bidi-font-family:"Times New Roman";color:black'><br>
+Section 2.8: Use Picard's method to find at least the fourth approximation and
+then find the function to which the series will converge. Problems 3, 5</span></b><b
+style='mso-bidi-font-weight:normal'><span style='font-size:24.0pt;mso-bidi-font-size:
+12.0pt;font-family:Times;mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span></b><b
+style='mso-bidi-font-weight:normal'><span style='font-size:24.0pt;font-family:
+Times;mso-bidi-font-family:"Times New Roman";color:black'><br>
+Section 3.1: 4, 5, 10, 11, 20, 21, 23, 24, 27</span></b><b style='mso-bidi-font-weight:
+normal'><span style='font-size:24.0pt;mso-bidi-font-size:12.0pt;font-family:
+Times;mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span></b><b
+style='mso-bidi-font-weight:normal'><span style='font-size:24.0pt;font-family:
+Times;mso-bidi-font-family:"Times New Roman";color:black'><br>
+Use MATLAB to solve the following initial value problems and to plot the
+solutions:</span></b><b style='mso-bidi-font-weight:normal'><span
+style='font-size:24.0pt;mso-bidi-font-size:12.0pt;font-family:Times;mso-bidi-font-family:
+"Times New Roman";color:black'>&nbsp;</span></b><b style='mso-bidi-font-weight:
+normal'><span style='font-size:24.0pt;font-family:Times;mso-bidi-font-family:
+"Times New Roman";color:black'><br>
+2.1:4 (no direction field, assume <span class=GramE>y(</span>1)=1), 2.2:9,
+2.3:5, 2.4:18 (use three different values for y0)</span></b><b
+style='mso-bidi-font-weight:normal'><span style='font-size:24.0pt;mso-bidi-font-size:
+12.0pt;font-family:Times;mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span></b><b
+style='mso-bidi-font-weight:normal'><span style='font-size:24.0pt;font-family:
+Times;mso-bidi-font-family:"Times New Roman";color:black'><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-top:.1pt;margin-right:0in;margin-bottom:.1pt;
+margin-left:0in;mso-para-margin-top:.01gd;mso-para-margin-right:0in;mso-para-margin-bottom:
+.01gd;mso-para-margin-left:0in'><b style='mso-bidi-font-weight:normal'><span
+style='font-size:24.0pt;font-family:Times;mso-bidi-font-family:"Times New Roman";
+color:black'><br>
+Homework Assignment #4:</span></b><b style='mso-bidi-font-weight:normal'><span
+style='font-size:24.0pt;mso-bidi-font-size:12.0pt;font-family:Times;mso-bidi-font-family:
+"Times New Roman";color:black'>&nbsp;</span></b><b style='mso-bidi-font-weight:
+normal'><span style='font-size:24.0pt;font-family:Times;mso-bidi-font-family:
+"Times New Roman";color:black'><br>
+Due Monday, October 12, in class</span></b><b style='mso-bidi-font-weight:normal'><span
+style='font-size:24.0pt;mso-bidi-font-size:12.0pt;font-family:Times;mso-bidi-font-family:
+"Times New Roman";color:black'>&nbsp;</span></b><b style='mso-bidi-font-weight:
+normal'><span style='font-size:24.0pt;font-family:Times;mso-bidi-font-family:
+"Times New Roman";color:black'><br>
+Section 2.9 (Miscellaneous): 36, 39, 44, 45</span></b><b style='mso-bidi-font-weight:
+normal'><span style='font-size:24.0pt;mso-bidi-font-size:12.0pt;font-family:
+Times;mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span></b><b
+style='mso-bidi-font-weight:normal'><span style='font-size:24.0pt;font-family:
+Times;mso-bidi-font-family:"Times New Roman";color:black'><br>
+Note: We will discuss the method of solving the above four problems on
+Wednesday.</span></b><b style='mso-bidi-font-weight:normal'><span
+style='font-size:24.0pt;mso-bidi-font-size:12.0pt;font-family:Times;mso-bidi-font-family:
+"Times New Roman";color:black'>&nbsp;</span></b><b style='mso-bidi-font-weight:
+normal'><span style='font-size:24.0pt;font-family:Times;mso-bidi-font-family:
+"Times New Roman";color:black'><br>
+I did not have enough time today because of getting too much involved with
+computations :( :(</span></b><b style='mso-bidi-font-weight:normal'><span
+style='font-size:24.0pt;mso-bidi-font-size:12.0pt;font-family:Times;mso-bidi-font-family:
+"Times New Roman";color:black'>&nbsp;</span></b><b style='mso-bidi-font-weight:
+normal'><span style='font-size:24.0pt;font-family:Times;mso-bidi-font-family:
+"Times New Roman";color:black'><br>
+Section 3.2: 5, 8, 13, 16, 19, 23, 25, 28, 31, 33</span></b><b
+style='mso-bidi-font-weight:normal'><span style='font-size:24.0pt;mso-bidi-font-size:
+12.0pt;font-family:Times;mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span></b><b
+style='mso-bidi-font-weight:normal'><span style='font-size:24.0pt;font-family:
+Times;mso-bidi-font-family:"Times New Roman";color:black'><br>
+Section 3.3: 12, 15, 19, 22, 24 (use MATLAB), 26 (use MATLAB)</span></b><b
+style='mso-bidi-font-weight:normal'><span style='font-size:24.0pt;mso-bidi-font-size:
+12.0pt;font-family:Times;mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span></b><b
+style='mso-bidi-font-weight:normal'><span style='font-size:24.0pt;font-family:
+Times;mso-bidi-font-family:"Times New Roman";color:black'><br>
+Section 3.4: 2, 4, 11, 15abc (use MATLAB), 18, 23, 24</span></b><b
+style='mso-bidi-font-weight:normal'><span style='font-size:24.0pt;mso-bidi-font-size:
+12.0pt;font-family:Times;mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span></b><b
+style='mso-bidi-font-weight:normal'><span style='font-size:24.0pt;font-family:
+Times;mso-bidi-font-family:"Times New Roman";color:black'><br>
+Section 3.5: 1, 5</span></b><b style='mso-bidi-font-weight:normal'><span
+style='font-size:24.0pt;mso-bidi-font-size:12.0pt;font-family:Times;mso-bidi-font-family:
+"Times New Roman";color:black'>&nbsp;</span></b><b style='mso-bidi-font-weight:
+normal'><span style='font-size:24.0pt;font-family:Times;mso-bidi-font-family:
+"Times New Roman";color:black'><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-top:.1pt;margin-right:0in;margin-bottom:.1pt;
+margin-left:0in;mso-para-margin-top:.01gd;mso-para-margin-right:0in;mso-para-margin-bottom:
+.01gd;mso-para-margin-left:0in'><b style='mso-bidi-font-weight:normal'><span
+style='font-size:24.0pt;font-family:Times;mso-bidi-font-family:"Times New Roman";
+color:black'><br>
+Homework Assignment #5:</span></b><b style='mso-bidi-font-weight:normal'><span
+style='font-size:24.0pt;mso-bidi-font-size:12.0pt;font-family:Times;mso-bidi-font-family:
+"Times New Roman";color:black'>&nbsp;</span></b><b style='mso-bidi-font-weight:
+normal'><span style='font-size:24.0pt;font-family:Times;mso-bidi-font-family:
+"Times New Roman";color:black'><br>
+Due Monday, October 19, in class</span></b><b style='mso-bidi-font-weight:normal'><span
+style='font-size:24.0pt;mso-bidi-font-size:12.0pt;font-family:Times;mso-bidi-font-family:
+"Times New Roman";color:black'>&nbsp;</span></b><b style='mso-bidi-font-weight:
+normal'><span style='font-size:24.0pt;font-family:Times;mso-bidi-font-family:
+"Times New Roman";color:black'><br>
+Section 3.3: 34, 35, 36, 37</span></b><b style='mso-bidi-font-weight:normal'><span
+style='font-size:24.0pt;mso-bidi-font-size:12.0pt;font-family:Times;mso-bidi-font-family:
+"Times New Roman";color:black'>&nbsp;</span></b><b style='mso-bidi-font-weight:
+normal'><span style='font-size:24.0pt;font-family:Times;mso-bidi-font-family:
+"Times New Roman";color:black'><br>
+Section 3.4: 27, 28, 40, 41, 42</span></b><b style='mso-bidi-font-weight:normal'><span
+style='font-size:24.0pt;mso-bidi-font-size:12.0pt;font-family:Times;mso-bidi-font-family:
+"Times New Roman";color:black'>&nbsp;</span></b><b style='mso-bidi-font-weight:
+normal'><span style='font-size:24.0pt;font-family:Times;mso-bidi-font-family:
+"Times New Roman";color:black'><br>
+Section 3.5: 9, 15, 17, 18, 19, 21a, 22a, 23a, 26, 27, 29, 30, 34</span></b><b
+style='mso-bidi-font-weight:normal'><span style='font-size:24.0pt;mso-bidi-font-size:
+12.0pt;font-family:Times;mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span></b><b
+style='mso-bidi-font-weight:normal'><span style='font-size:24.0pt;font-family:
+Times;mso-bidi-font-family:"Times New Roman";color:black'><br>
+Section 3.6: 2, 3, 4</span></b><b style='mso-bidi-font-weight:normal'><span
+style='font-size:24.0pt;mso-bidi-font-size:12.0pt;font-family:Times;mso-bidi-font-family:
+"Times New Roman";color:black'>&nbsp;</span></b><b style='mso-bidi-font-weight:
+normal'><span style='font-size:24.0pt;font-family:Times;mso-bidi-font-family:
+"Times New Roman";color:black'><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-top:.1pt;margin-right:0in;margin-bottom:.1pt;
+margin-left:0in;mso-para-margin-top:.01gd;mso-para-margin-right:0in;mso-para-margin-bottom:
+.01gd;mso-para-margin-left:0in'><b style='mso-bidi-font-weight:normal'><span
+style='font-size:24.0pt;font-family:Times;mso-bidi-font-family:"Times New Roman";
+color:black'><br>
+Homework Assignment #6:</span></b><b style='mso-bidi-font-weight:normal'><span
+style='font-size:24.0pt;mso-bidi-font-size:12.0pt;font-family:Times;mso-bidi-font-family:
+"Times New Roman";color:black'>&nbsp;</span></b><b style='mso-bidi-font-weight:
+normal'><span style='font-size:24.0pt;font-family:Times;mso-bidi-font-family:
+"Times New Roman";color:black'><br>
+Due Wednesday, November 4, in class</span></b><b style='mso-bidi-font-weight:
+normal'><span style='font-size:24.0pt;mso-bidi-font-size:12.0pt;font-family:
+Times;mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span></b><b
+style='mso-bidi-font-weight:normal'><span style='font-size:24.0pt;font-family:
+Times;mso-bidi-font-family:"Times New Roman";color:black'><br>
+Section 3.6: 5, 7, 8, 11, 12, 14, 15, 19</span></b><b style='mso-bidi-font-weight:
+normal'><span style='font-size:24.0pt;mso-bidi-font-size:12.0pt;font-family:
+Times;mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span></b><b
+style='mso-bidi-font-weight:normal'><span style='font-size:24.0pt;font-family:
+Times;mso-bidi-font-family:"Times New Roman";color:black'><br>
+Section 3.7: Solve manually 3, 7, 8, 11, 12, 13, 15, 17</span></b><b
+style='mso-bidi-font-weight:normal'><span style='font-size:24.0pt;mso-bidi-font-size:
+12.0pt;font-family:Times;mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span></b><b
+style='mso-bidi-font-weight:normal'><span style='font-size:24.0pt;font-family:
+Times;mso-bidi-font-family:"Times New Roman";color:black'><br>
+Use MATLAB to solve and plot the solution of 3.7: 7, 8, 11</span></b><b
+style='mso-bidi-font-weight:normal'><span style='font-size:24.0pt;mso-bidi-font-size:
+12.0pt;font-family:Times;mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span></b><b
+style='mso-bidi-font-weight:normal'><span style='font-size:24.0pt;font-family:
+Times;mso-bidi-font-family:"Times New Roman";color:black'><br>
+Section 3.8: 2, 5, 6, 7a, <span class=GramE>b(</span>MATLAB),c,
+8a,b,c(MATLAB),d</span></b><b style='mso-bidi-font-weight:normal'><span
+style='font-size:24.0pt;mso-bidi-font-size:12.0pt;font-family:Times;mso-bidi-font-family:
+"Times New Roman";color:black'>&nbsp;</span></b><b style='mso-bidi-font-weight:
+normal'><span style='font-size:24.0pt;font-family:Times;mso-bidi-font-family:
+"Times New Roman";color:black'><br>
+Section 4.1: 4, 7, 13, 17, 18, 19</span></b><b style='mso-bidi-font-weight:
+normal'><span style='font-size:24.0pt;mso-bidi-font-size:12.0pt;font-family:
+Times;mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span></b><b
+style='mso-bidi-font-weight:normal'><span style='font-size:24.0pt;font-family:
+Times;mso-bidi-font-family:"Times New Roman";color:black'><o:p></o:p></span></b></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Times'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+</div>
+
+</body>
+
+</html>

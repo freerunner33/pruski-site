@@ -1,0 +1,1119 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<title>Fall 2015: Differential Equations</title>
+<meta name=Title content="">
+<meta name=Keywords content="">
+<meta http-equiv=Content-Type content="text/html; charset=macintosh">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 2008">
+<meta name=Originator content="Microsoft Word 2008">
+<link rel=File-List href="m330f15ta_files/filelist.xml">
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Heath Fontaine</o:Author>
+  <o:Template>Normal.dotm</o:Template>
+  <o:LastAuthor>Heath Fontaine</o:LastAuthor>
+  <o:Revision>1</o:Revision>
+  <o:TotalTime>0</o:TotalTime>
+  <o:Created>2015-11-04T00:27:00Z</o:Created>
+  <o:LastSaved>2015-11-04T00:27:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>394</o:Words>
+  <o:Characters>2247</o:Characters>
+  <o:Company>School</o:Company>
+  <o:Lines>18</o:Lines>
+  <o:Paragraphs>4</o:Paragraphs>
+  <o:CharactersWithSpaces>2759</o:CharactersWithSpaces>
+  <o:Version>12.0</o:Version>
+ </o:DocumentProperties>
+ <o:OfficeDocumentSettings>
+  <o:AllowPNG/>
+ </o:OfficeDocumentSettings>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:TrackMoves>false</w:TrackMoves>
+  <w:TrackFormatting/>
+  <w:PunctuationKerning/>
+  <w:DrawingGridHorizontalSpacing>18 pt</w:DrawingGridHorizontalSpacing>
+  <w:DrawingGridVerticalSpacing>18 pt</w:DrawingGridVerticalSpacing>
+  <w:DisplayHorizontalDrawingGridEvery>0</w:DisplayHorizontalDrawingGridEvery>
+  <w:DisplayVerticalDrawingGridEvery>0</w:DisplayVerticalDrawingGridEvery>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:DontGrowAutofit/>
+   <w:DontAutofitConstrainedTables/>
+   <w:DontVertAlignInTxbx/>
+  </w:Compatibility>
+ </w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" LatentStyleCount="276">
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+@font-face
+	{font-family:Times;
+	panose-1:2 0 5 0 0 0 0 0 0 0;
+	mso-font-charset:0;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 0 0 0 1 0;}
+@font-face
+	{font-family:Cambria;
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 0 0 0 1 0;}
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Cambria;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	mso-outline-level:1;
+	font-size:24.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ascii-font-family:Times;
+	mso-hansi-font-family:Times;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+h2
+	{mso-style-link:"Heading 2 Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	mso-outline-level:2;
+	font-size:18.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ascii-font-family:Times;
+	mso-hansi-font-family:Times;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+p.MsoFootnoteText, li.MsoFootnoteText, div.MsoFootnoteText
+	{mso-style-link:"Footnote Text Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ascii-font-family:Times;
+	mso-fareast-font-family:Cambria;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Times;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+p.MsoListBullet, li.MsoListBullet, div.MsoListBullet
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.2in;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	text-indent:-.2in;
+	line-height:125%;
+	mso-pagination:widow-orphan;
+	mso-list:l0 level1 lfo1;
+	tab-stops:13.5pt;
+	font-size:10.0pt;
+	mso-bidi-font-size:11.0pt;
+	font-family:"Times New Roman";
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+p.MsoListBulletCxSpFirst, li.MsoListBulletCxSpFirst, div.MsoListBulletCxSpFirst
+	{mso-style-type:export-only;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.2in;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	text-indent:-.2in;
+	line-height:125%;
+	mso-pagination:widow-orphan;
+	mso-list:l0 level1 lfo1;
+	tab-stops:13.5pt;
+	font-size:10.0pt;
+	mso-bidi-font-size:11.0pt;
+	font-family:"Times New Roman";
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+p.MsoListBulletCxSpMiddle, li.MsoListBulletCxSpMiddle, div.MsoListBulletCxSpMiddle
+	{mso-style-type:export-only;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.2in;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	text-indent:-.2in;
+	line-height:125%;
+	mso-pagination:widow-orphan;
+	mso-list:l0 level1 lfo1;
+	tab-stops:13.5pt;
+	font-size:10.0pt;
+	mso-bidi-font-size:11.0pt;
+	font-family:"Times New Roman";
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+p.MsoListBulletCxSpLast, li.MsoListBulletCxSpLast, div.MsoListBulletCxSpLast
+	{mso-style-type:export-only;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.2in;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	text-indent:-.2in;
+	line-height:125%;
+	mso-pagination:widow-orphan;
+	mso-list:l0 level1 lfo1;
+	tab-stops:13.5pt;
+	font-size:10.0pt;
+	mso-bidi-font-size:11.0pt;
+	font-family:"Times New Roman";
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{mso-style-link:"Title Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ascii-font-family:Times;
+	mso-fareast-font-family:Cambria;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Times;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+p.MsoSubtitle, li.MsoSubtitle, div.MsoSubtitle
+	{mso-style-link:"Subtitle Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ascii-font-family:Times;
+	mso-fareast-font-family:Cambria;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Times;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+p
+	{margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ascii-font-family:Times;
+	mso-fareast-font-family:Cambria;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Times;
+	mso-bidi-font-family:"Times New Roman";}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-locked:yes;
+	mso-style-link:"Heading 1";
+	mso-ansi-font-size:24.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Times;
+	mso-ascii-font-family:Times;
+	mso-hansi-font-family:Times;
+	mso-font-kerning:18.0pt;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-locked:yes;
+	mso-style-link:"Heading 2";
+	mso-ansi-font-size:18.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Times;
+	mso-ascii-font-family:Times;
+	mso-hansi-font-family:Times;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+span.apple-converted-space
+	{mso-style-name:apple-converted-space;}
+span.grame
+	{mso-style-name:grame;}
+span.spelle
+	{mso-style-name:spelle;}
+span.FootnoteTextChar
+	{mso-style-name:"Footnote Text Char";
+	mso-style-locked:yes;
+	mso-style-link:"Footnote Text";
+	mso-ansi-font-size:10.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Times;
+	mso-ascii-font-family:Times;
+	mso-hansi-font-family:Times;}
+span.TitleChar
+	{mso-style-name:"Title Char";
+	mso-style-locked:yes;
+	mso-style-link:Title;
+	mso-ansi-font-size:10.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Times;
+	mso-ascii-font-family:Times;
+	mso-hansi-font-family:Times;}
+span.SubtitleChar
+	{mso-style-name:"Subtitle Char";
+	mso-style-locked:yes;
+	mso-style-link:Subtitle;
+	mso-ansi-font-size:10.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Times;
+	mso-ascii-font-family:Times;
+	mso-hansi-font-family:Times;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+@list l0
+	{mso-list-id:-119;
+	mso-list-type:simple;
+	mso-list-template-ids:18133038;}
+@list l0:level1
+	{mso-level-number-format:bullet;
+	mso-level-style-link:"List Bullet";
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:27.0pt;
+	mso-level-number-position:left;
+	margin-left:27.0pt;
+	text-indent:-.25in;
+	font-family:Symbol;
+	color:#C0504D;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:minor-latin;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:minor-latin;}
+</style>
+<![endif]-->
+</head>
+
+<body bgcolor=white lang=EN-US link=blue vlink=blue style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<p class=MsoNormal align=center style='text-align:center'><b><span
+style='font-size:16.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>Math 330: Ordinary Differential Equations<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span><span
+style='font-size:13.5pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'><o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b><span
+style='font-size:13.5pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>October 16, 2015<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span><span
+style='font-size:13.5pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'><o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center;page-break-after:avoid;
+mso-outline-level:1'><b style='mso-bidi-font-weight:normal'><span
+style='font-size:20.0pt;font-family:"Times New Roman";color:black;mso-font-kerning:
+18.0pt'>Midterm Exam Review Topics<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span><span
+style='font-size:13.5pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span><span
+style='font-size:13.5pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>1.</span><span style='font-size:7.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style='font-size:7.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>&nbsp;</span><b style='mso-bidi-font-weight:
+normal'><span style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>Direction fields</span></b><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>for first order equations</span><span
+style='font-size:13.5pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>2.</span><span style='font-size:7.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style='font-size:7.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>&nbsp;</span><b style='mso-bidi-font-weight:
+normal'><span style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>Autonomous equations</span></b><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>;</span><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>&nbsp;</span><b style='mso-bidi-font-weight:
+normal'><span style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>equilibrium solutions; asymptotically stable</span></b><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>,</span><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>&nbsp;</span><b style='mso-bidi-font-weight:
+normal'><span style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>unstable</span></b><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>&nbsp;</span><span style='font-size:11.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>and</span><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;</span><b style='mso-bidi-font-weight:normal'><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>semi-stable</span></b><span style='font-size:
+11.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>&nbsp;</span><span style='font-size:11.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>solutions</span><span style='font-size:13.5pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>3.</span><span style='font-size:7.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style='font-size:7.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>&nbsp;</span><b style='mso-bidi-font-weight:
+normal'><span style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>First order equations</span></b><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>;</span><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>&nbsp;</span><b style='mso-bidi-font-weight:
+normal'><span style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>initial value problems</span></b><span
+style='font-size:13.5pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>4.</span><span style='font-size:7.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style='font-size:7.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>&nbsp;</span><span style='font-size:11.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>First order</span><span style='font-size:11.0pt;mso-bidi-font-size:
+12.0pt;font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;</span><b style='mso-bidi-font-weight:normal'><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>linear</span></b><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>&nbsp;</span><span style='font-size:11.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>equations; the</span><span style='font-size:11.0pt;mso-bidi-font-size:
+12.0pt;font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;</span><b style='mso-bidi-font-weight:normal'><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>method of integrating factor</span></b><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>&#8211; derivation and use</span><span
+style='font-size:13.5pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>5.</span><span style='font-size:7.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style='font-size:7.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>&nbsp;</span><span style='font-size:11.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>First order linear equations; the</span><span style='font-size:
+11.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>&nbsp;</span><b style='mso-bidi-font-weight:
+normal'><span style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>method of variation of parameter</span></b><span
+style='font-size:13.5pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>6.</span><span style='font-size:7.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style='font-size:7.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>&nbsp;</span><b style='mso-bidi-font-weight:
+normal'><span style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>Separable</span></b><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>&nbsp;</span><span style='font-size:11.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>equations</span><span style='font-size:13.5pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>7.</span><span style='font-size:7.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style='font-size:7.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>&nbsp;</span><span style='font-size:11.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>Models of</span><span style='font-size:11.0pt;mso-bidi-font-size:
+12.0pt;font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;</span><b style='mso-bidi-font-weight:normal'><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>mixing process</span></b><span style='font-size:
+13.5pt;font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>8.</span><span style='font-size:7.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style='font-size:7.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>&nbsp;</span><b style='mso-bidi-font-weight:
+normal'><span style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>Continuous compounding</span></b><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>of interest</span><span style='font-size:13.5pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>9.</span><span style='font-size:7.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style='font-size:7.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>&nbsp;</span><span style='font-size:11.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>Simple</span><span style='font-size:11.0pt;mso-bidi-font-size:
+12.0pt;font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;</span><b style='mso-bidi-font-weight:normal'><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>population growth models</span></b><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>;</span><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>&nbsp;</span><b style='mso-bidi-font-weight:
+normal'><span style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>exponential growth</span></b><span
+style='font-size:13.5pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>10.</span><span style='font-size:7.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;</span><span style='font-size:7.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;</span><b style='mso-bidi-font-weight:normal'><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>Radioactive decay</span></b><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>model</span><span style='font-size:13.5pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>11.</span><span style='font-size:7.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;</span><span style='font-size:7.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;</span><b style='mso-bidi-font-weight:normal'><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>Existence and uniqueness theorem</span></b><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>for first order</span><span style='font-size:
+11.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>&nbsp;</span><b style='mso-bidi-font-weight:
+normal'><span style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>linear</span></b><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>&nbsp;</span><span style='font-size:11.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>equations</span><span style='font-size:13.5pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>12.</span><span style='font-size:7.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;</span><span style='font-size:7.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;</span><b style='mso-bidi-font-weight:normal'><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>Existence and uniqueness theorem</span></b><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>for</span><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>&nbsp;</span><b style='mso-bidi-font-weight:
+normal'><span style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>non-linear</span></b><span style='font-size:
+11.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>&nbsp;</span><span style='font-size:11.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>first order equations</span><span style='font-size:13.5pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>13.</span><span style='font-size:7.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;</span><span style='font-size:7.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;</span><b style='mso-bidi-font-weight:normal'><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>Bernoulli</span></b><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>&nbsp;</span><span style='font-size:11.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>equation</span><span style='font-size:13.5pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>14.</span><span style='font-size:7.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;</span><span style='font-size:7.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;</span><b style='mso-bidi-font-weight:normal'><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>Logistic model</span></b><span style='font-size:
+11.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>&nbsp;</span><span style='font-size:11.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>of population growth;</span><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>&nbsp;</span><b style='mso-bidi-font-weight:
+normal'><span style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>carrying capacity</span></b><span
+style='font-size:13.5pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>15.</span><span style='font-size:7.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;</span><span style='font-size:7.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;</span><b style='mso-bidi-font-weight:normal'><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>Exact</span></b><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>&nbsp;</span><span style='font-size:11.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>equations</span><span style='font-size:13.5pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>16.</span><span style='font-size:7.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;</span><span style='font-size:7.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;</span><span style='font-size:11.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>Theorem about</span><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span><b
+style='mso-bidi-font-weight:normal'><span style='font-size:11.0pt;font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";color:black'>conditions
+for exactness</span></b><span style='font-size:13.5pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>17.</span><span style='font-size:7.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;</span><span style='font-size:7.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;</span><b style='mso-bidi-font-weight:normal'><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>Euler’s numerical method</span></b><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>for first order equations; components of</span><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span><b
+style='mso-bidi-font-weight:normal'><span style='font-size:11.0pt;font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";color:black'>error</span></b><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>of a numerical method</span><span
+style='font-size:13.5pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>18.</span><span style='font-size:7.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;</span><span style='font-size:7.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;</span><b style='mso-bidi-font-weight:normal'><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>Picard’s method of successive approximations</span></b><span
+style='font-size:13.5pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>19.</span><span style='font-size:7.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;</span><span style='font-size:7.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;</span><b style='mso-bidi-font-weight:normal'><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>Second order linear differential equations</span></b><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>; initial value problems; homogeneous and
+non-homogeneous equations</span><span style='font-size:13.5pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>20.</span><span style='font-size:7.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;</span><span style='font-size:7.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;</span><span style='font-size:11.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>The</span><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span><b
+style='mso-bidi-font-weight:normal'><span style='font-size:11.0pt;font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";color:black'>superposition</span></b><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>principle (Theorem 3.2.2)</span><span
+style='font-size:13.5pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>21.</span><span style='font-size:7.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;</span><span style='font-size:7.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;</span><b style='mso-bidi-font-weight:normal'><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>Existence and uniqueness theorem</span></b><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>for second-order linear differential equations
+(Theorem 3.2.1)</span><span style='font-size:13.5pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>22.</span><span style='font-size:7.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;</span><span style='font-size:7.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;</span><span style='font-size:11.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>Second-order linear
+homogeneous equations with</span><span style='font-size:11.0pt;mso-bidi-font-size:
+12.0pt;font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;</span><b style='mso-bidi-font-weight:normal'><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>constant coefficients</span></b><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>;</span><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>&nbsp;</span><b style='mso-bidi-font-weight:
+normal'><span style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>characteristic equation</span></b><span
+style='font-size:13.5pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>23.</span><span style='font-size:7.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;</span><span style='font-size:7.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;</span><span style='font-size:11.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>Case of</span><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span><b
+style='mso-bidi-font-weight:normal'><span style='font-size:11.0pt;font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";color:black'>two
+distinct real roots</span></b><span style='font-size:11.0pt;mso-bidi-font-size:
+12.0pt;font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;</span><span style='font-size:11.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>of characteristic equation</span><span
+style='font-size:13.5pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>24.</span><span style='font-size:7.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;</span><span style='font-size:7.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;</span><b style='mso-bidi-font-weight:normal'><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>Linear differential operator</span></b><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>notation</span><span style='font-size:13.5pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>25.</span><span style='font-size:7.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;</span><span style='font-size:7.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;</span><span style='font-size:11.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>Wronski determinant (<b
+style='mso-bidi-font-weight:normal'>Wronskian</b>)</span><span
+style='font-size:13.5pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>26.</span><span style='font-size:7.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;</span><span style='font-size:7.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;</span><b style='mso-bidi-font-weight:normal'><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>Theorems about constants (TACO)</span></b><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>(Theorem 3.2.3) and about the</span><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span><b
+style='mso-bidi-font-weight:normal'><span style='font-size:11.0pt;font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";color:black'>general
+solution (TAGS)</span></b><span style='font-size:11.0pt;mso-bidi-font-size:
+12.0pt;font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;</span><span style='font-size:11.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>(Theorem 3.2.4);</span><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span><b
+style='mso-bidi-font-weight:normal'><span style='font-size:11.0pt;font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";color:black'>fundamental
+set of solutions</span></b><span style='font-size:13.5pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>27.</span><span style='font-size:7.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;</span><span style='font-size:7.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;</span><b style='mso-bidi-font-weight:normal'><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>Theorem about complex-valued solution</span></b><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>of a second order linear equation (Theorem
+3.2.6)</span><span style='font-size:13.5pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>28.</span><span style='font-size:7.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;</span><span style='font-size:7.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;</span><b style='mso-bidi-font-weight:normal'><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>Abel’s theorem</span></b><span style='font-size:
+11.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>&nbsp;</span><span style='font-size:11.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>(<b style='mso-bidi-font-weight:normal'>AT</b>) (Theorem 3.2.7)</span><span
+style='font-size:13.5pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>29.</span><span style='font-size:7.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;</span><span style='font-size:7.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;</span><span style='font-size:11.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>Case of</span><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span><b
+style='mso-bidi-font-weight:normal'><span style='font-size:11.0pt;font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";color:black'>complex
+roots</span></b><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;</span><span style='font-size:11.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>of characteristic equation;</span><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span><b
+style='mso-bidi-font-weight:normal'><span style='font-size:11.0pt;font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";color:black'>Euler’s
+formula</span></b><span style='font-size:11.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>; obtaining</span><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span><b
+style='mso-bidi-font-weight:normal'><span style='font-size:11.0pt;font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";color:black'>real-valued
+solutions</span></b><span style='font-size:13.5pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>30.</span><span style='font-size:7.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;</span><span style='font-size:7.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;</span><span style='font-size:11.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>Case of</span><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span><b
+style='mso-bidi-font-weight:normal'><span style='font-size:11.0pt;font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";color:black'>repeated
+roots</span></b><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;</span><span style='font-size:11.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>of characteristic equation;
+method of</span><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;</span><b style='mso-bidi-font-weight:normal'><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>reduction of order</span></b><span
+style='font-size:13.5pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>31.</span><span style='font-size:7.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;</span><span style='font-size:7.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;</span><b style='mso-bidi-font-weight:normal'><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>Second-order equations reducible to first-order
+equations</span></b><span style='font-size:11.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>: two types &#8211;
+dependent variable missing and independent variable missing (see pages 135-136)</span><span
+style='font-size:13.5pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>32.</span><span style='font-size:7.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;</span><span style='font-size:7.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;</span><b style='mso-bidi-font-weight:normal'><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>Non-homogeneous</span></b><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>second order linear differential equations;</span><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span><b
+style='mso-bidi-font-weight:normal'><span style='font-size:11.0pt;font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";color:black'>DIFIFI</span></b><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>Theorem (Theorem 3.5.1) and</span><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span><b
+style='mso-bidi-font-weight:normal'><span style='font-size:11.0pt;font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";color:black'>Theorem
+about the</span></b><b style='mso-bidi-font-weight:normal'><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span></b><b
+style='mso-bidi-font-weight:normal'><span style='font-size:11.0pt;font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";color:black'>general
+solution of a non-homogeneous linear equation</span></b><span style='font-size:
+11.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>&nbsp;</span><span style='font-size:11.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>(Theorem 3.5.2)</span><span style='font-size:13.5pt;font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";color:black'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>33.</span><span style='font-size:7.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;</span><span style='font-size:7.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;</span><span style='font-size:11.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>Solving non-homogeneous
+equations; finding particular solutions using</span><span style='font-size:
+11.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>&nbsp;</span><b style='mso-bidi-font-weight:
+normal'><span style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>method of similarity</span></b><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>(<b style='mso-bidi-font-weight:normal'>MOS</b>)
+and</span><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span><b
+style='mso-bidi-font-weight:normal'><span style='font-size:11.0pt;font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";color:black'>method of
+undetermined coefficients</span></b><span style='font-size:11.0pt;mso-bidi-font-size:
+12.0pt;font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;</span><span style='font-size:11.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>(<b style='mso-bidi-font-weight:
+normal'>MOUC</b>)</span><span style='font-size:13.5pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>34.</span><span style='font-size:7.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;</span><span style='font-size:7.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;</span><b style='mso-bidi-font-weight:normal'><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>Superposition principle</span></b><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>for non-homogeneous equations (stated on the
+lower half of page 179)</span><span style='font-size:13.5pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='font-size:11.0pt;font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:black'>35.</span><span style='font-size:7.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;</span><span style='font-size:7.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;</span><span style='font-size:11.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>The</span><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>&nbsp;</span><b
+style='mso-bidi-font-weight:normal'><span style='font-size:11.0pt;font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";color:black'>method of
+variation of parameters</span></b><span style='font-size:11.0pt;mso-bidi-font-size:
+12.0pt;font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black'>&nbsp;</span><span style='font-size:11.0pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'>(<b style='mso-bidi-font-weight:
+normal'>PARVAR</b>)</span><span style='font-size:13.5pt;font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black'><o:p></o:p></span></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+</div>
+
+</body>
+
+</html>
