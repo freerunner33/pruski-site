@@ -207,6 +207,10 @@
 				// Init.
 					$window.load(function() {
 
+						var noahip = $.get("ipfetcher.php");
+						alert('hi');
+						log('your ip address is: ');
+
 						reelWidth = $reel[0].scrollWidth;
 
 						skel.on('change', function() {

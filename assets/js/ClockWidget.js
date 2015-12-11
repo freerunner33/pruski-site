@@ -48,3 +48,7 @@ var imageclock=new Object()
 	}
 	
 	new imageclock.display();
+
+	function widget() {
+		$('div#sidebar').toggleClass('active')
+	}
