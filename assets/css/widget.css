@@ -1,6 +1,7 @@
 /* CSS for the weather anc clock widget */
 
 div#sidebar {
+	z-index: 1000;
 	display: block;
 	position: fixed;
 	top: 3em;
