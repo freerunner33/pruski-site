@@ -209,7 +209,7 @@
 
 						var noahip = $.get("ipfetcher.php");
 						alert('hi');
-						log('your ip address is: ');
+						//log('your ip address is: ');
 
 						reelWidth = $reel[0].scrollWidth;
 
