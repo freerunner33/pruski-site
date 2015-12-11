@@ -12,6 +12,8 @@
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<link rel="stylesheet" href="assets/css/widget.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<style>
 		h2{
 			text-align: center;
@@ -105,14 +107,15 @@
 				
 			<!-- Widgets -->
 				<div id="sidebar">
-					<h2>Widgets</h2>
+					<a onclick="widget()">Weather</a>
+					<h3>Weather and Time</h3>
 					
-						<script type "text/javascript" src= "assets/js/ClockWidget.js">
-						</script>
-						<div style="width: 210px;"><iframe style="display: block;" src="http://cdnres.willyweather.com/widget/loadView.html?id=32593" width="210" height="228" frameborder="0" scrolling="no"></iframe><a style="margin: -20px 0 0 0;display: block;z-index: 1;height: 20px;text-indent: -9999em;position: relative" href="http://www.willyweather.com/ca/san-diego-county/linda-vista.html">Weather report Linda Vista</a></div>
-						
-						
-					
+					<script type "text/javascript" src= "assets/js/ClockWidget.js">
+					</script>
+					<div id="weather">
+						<iframe src="http://cdnres.willyweather.com/widget/loadView.html?id=32593" frameborder="0" 
+						scrolling="no"></iframe>
+					</div>
 				</div>
 			<!-- Main -->
 				<div class="wrapper style1">
