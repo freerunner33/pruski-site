@@ -20,7 +20,19 @@ div#sidebar.active {
 }
 
 div#sidebar a {
+
+	/* Safari */
+	-webkit-transform: rotate(-90deg);
+
+	/* Firefox */
 	-moz-transform: rotate(-90deg);
+
+	/* IE */
+	-ms-transform: rotate(-90deg);
+
+	/* Opera */
+	-o-transform: rotate(-90deg);
+
 	z-index: -1;
 	display: inline-block;
 	position: relative;

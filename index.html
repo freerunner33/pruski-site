@@ -12,6 +12,8 @@
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<link rel="stylesheet" href="assets/css/widget.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 	</head>
 	<body class="homepage">
 		<div id="page-wrapper">
@@ -96,6 +98,19 @@
 							</ul>
 						</nav>
 
+				</div>
+
+			<!-- Widgets -->
+				<div id="sidebar">
+					<a onclick="widget()">Weather</a>
+					<h3>Weather and Time</h3>
+					
+					<script type "text/javascript" src= "assets/js/ClockWidget.js">
+					</script>
+					<div id="weather">
+						<iframe src="http://cdnres.willyweather.com/widget/loadView.html?id=32593" frameborder="0" 
+						scrolling="no"></iframe>
+					</div>
 				</div>
 
 			<!-- Banner -->
