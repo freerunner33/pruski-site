@@ -8,7 +8,11 @@ $(document).ready(function() {
     } else {
     	audio.currentTime = 0
     }
-    audio.play()
+    if (sessionStorage.getItem('musicPaused') == 'true') {
+    	audio.pause()
+    } else {
+    	audio.play()
+    }
 })
 
 function music() {
@@ -17,7 +21,8 @@ function music() {
 
 $('a').on('click', function() {
 	var audio = document.getElementsByTagName('audio')[0]
-	var link = $(this).attr('href')
 	var time = audio.currentTime
+	var p = audio.paused
 	sessionStorage.setItem('musicTime', time)
+	sessionStorage.setItem('musicPaused', p)
 })
