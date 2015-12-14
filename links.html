@@ -14,6 +14,9 @@
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<link rel="stylesheet" href="assets/css/widget.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<link rel="stylesheet" href="assets/css/music.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<script src="assets/js/jquery.min.js"></script>
 	</head>
 	<body class="no-sidebar">
 		<div id="page-wrapper">
@@ -98,12 +101,19 @@
 				</div>
 
 			<!-- Widgets -->
+				<div id="audio" class="active">
+					<a onclick="music()">Music</a>
+					<h3>Music</h3>
+					<script type="text/javascript" src="assets/js/music.js"></script>
+					<audio controls="controls">
+					  	<source src="satisfaction_rolling_stones.mp3" type="audio/mpeg">
+					</audio>
+				</div>
+
 				<div id="sidebar">
 					<a onclick="widget()">Weather</a>
 					<h3>Weather and Time</h3>
-					
-					<script type "text/javascript" src= "assets/js/ClockWidget.js">
-					</script>
+					<script type "text/javascript" src= "assets/js/ClockWidget.js"></script>
 					<div id="weather">
 						<iframe src="http://cdnres.willyweather.com/widget/loadView.html?id=32593" frameborder="0" 
 						scrolling="no"></iframe>

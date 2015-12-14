@@ -1,0 +1,57 @@
+div#audio {
+	z-index: 1000;
+	display: block;
+	position: fixed;
+	top: 3em;
+	left: 0;
+	width: 300px;
+	padding: 0 1em;
+	height: 125px;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.95);
+	border-radius: 10px;
+	background: rgba(0, 0, 0, 0.5);
+	text-align: center;
+	transform: translate(-100%, 0px);
+	transition: transform 0.25s ease 0s, opacity 2s ease 0s;
+}
+
+div#audio.active {
+	transform: translate(0em, 0px);
+	transition: transform 0.25s ease 0s, opacity 2s ease 0s;
+}
+
+div#audio a {
+	/* Safari */
+	-webkit-transform: rotate(90deg);
+	/* Firefox */
+	-moz-transform: rotate(90deg);
+	/* IE */
+	-ms-transform: rotate(90deg);
+	/* Opera */
+	-o-transform: rotate(90deg);
+
+	z-index: -1;
+	display: inline-block;
+	position: relative;
+	right: -165px;
+	top: 50px;
+	background: rgba(0, 0, 0, 0.75);
+	border-radius: 15px 15px 0 0;
+	padding: 0 10px;
+	cursor: pointer;
+}
+div#audio a:hover {
+	color: #2ecc71;
+}
+
+div#audio h3 {
+	margin-top: -1em;
+	color: #eee;
+}
+
+div#audio audio {
+	display: inline-block;
+	width: 100%;
+	z-index: 1;
+	text-align: center;
+}
