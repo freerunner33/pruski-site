@@ -8,10 +8,10 @@ $(document).ready(function() {
     } else {
     	audio.currentTime = 0
     }
-    if (sessionStorage.getItem('musicPaused') == 'true') {
-    	audio.pause()
-    } else {
+    if (sessionStorage.getItem('musicPaused') == 'false') {
     	audio.play()
+    } else {
+    	audio.pause()
     }
 })
 
